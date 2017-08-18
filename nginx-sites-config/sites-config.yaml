@@ -1,0 +1,17 @@
+gh-pages:
+    nginx-templates:
+        - 'gh-pages.conf'
+    vars:
+        sites:
+            hk-sunfund-asia:
+                envs:
+                    pre:
+                        http_wildcard_server_name: 'pre0972.sunfund.com.hk pre0972-sunfund-hk.1byte.in'
+                        no_https: true
+                        root_path: '/data0/docker/hk-sunfund-asia/'
+            hk-sunfund-securities:
+                envs:
+                    pre:
+                        http_wildcard_server_name: 'pre0972.sunfundsecurities.com.hk pre0972-sunfundsecurities-hk.1byte.in'
+                        no_https: true
+                        root_path: '/data0/docker/hk-sunfund-securities/'
